@@ -6,7 +6,6 @@ const BOTTLE_CONTENT_Y_START = 45;
 const BOTTLE_MAX_LIQUID_HEIGHT = 140;
 const SLIDER_MIN_X = 25;
 const SLIDER_MAX_X = 95;
-const SLIDER_Y = 203;
 
 export default function MomoBottle() {
   const [percent, setPercent] = useState(30);
@@ -194,20 +193,18 @@ export default function MomoBottle() {
         x={SLIDER_MIN_X}
         y={200}
         width={SLIDER_MAX_X - SLIDER_MIN_X}
-        height={6}
-        rx={3}
-        fill="#e9ecef"
-        stroke="#ced4da"
-        strokeWidth={1}
+        height={2}
+        rx={1}
+        fill="#111"
         style={{ cursor: "pointer" }}
         onClick={onTrackClick}
       />
       {/* Slider thumb */}
       <circle
         cx={thumbX}
-        cy={SLIDER_Y}
-        r={8}
-        fill="url(#sliderThumbGradient)"
+        cy={201}
+        r={4}
+        fill="#111"
         style={{ cursor: "pointer" }}
         onMouseDown={onThumbDown}
         onTouchStart={onThumbDown}
