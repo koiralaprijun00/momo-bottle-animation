@@ -120,19 +120,6 @@ export default function MomoBottle() {
         strokeWidth="3"
         filter="url(#dropShadow)"
       />
-      {/* More visible horizontal ridges */}
-      {[0, 1, 2, 3, 4, 5, 6].map(i => (
-        <rect
-          key={i}
-          x={36}
-          y={55 + i * 18}
-          width={48}
-          height={12}
-          rx={6}
-          fill="#fff"
-          opacity="0.3"
-        />
-      ))}
       {/* Plastic inner shadow */}
       <rect
         x="30"
@@ -153,17 +140,6 @@ export default function MomoBottle() {
         rx="3"
         fill="url(#highlightGradient)"
         opacity="0.18"
-        filter="url(#highlightBlur)"
-        style={{ pointerEvents: "none" }}
-      />
-      {/* Base shadow */}
-      <ellipse
-        cx="60"
-        cy="195"
-        rx="28"
-        ry="7"
-        fill="#000"
-        opacity="0.12"
         filter="url(#highlightBlur)"
         style={{ pointerEvents: "none" }}
       />

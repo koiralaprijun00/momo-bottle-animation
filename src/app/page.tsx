@@ -1,9 +1,11 @@
-import BottleComparison from "@/components/BottleComparison";
+import MomoBottle from "@/components/MomoBottle";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <BottleComparison />
-    </main>
+    <div className="flex flex-col items-center p-8">
+    <div className="flex flex-col items-center">
+      <MomoBottle />
+    </div>
+  </div>
   );
 }
